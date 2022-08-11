@@ -1,0 +1,488 @@
+/************************ candidates */
+.card-wrapper {
+    max-width: 1300px;
+    padding: 24px 0;
+    margin: 0 auto;
+    font-family: var(--GT-Walsheim);
+}
+
+.card-inner-w {
+    padding: 0 15px;
+}
+
+.card-wrapper .heading h2 {
+    color: var(--color-gray-10);
+    font-size: 28px;
+    font-weight: var(--font-weight-normalBold);
+    line-height: 1;
+    letter-spacing: -0.75;
+}
+
+.cardComponent {
+    display: grid;
+    grid-gap: 8px 0;
+    margin-top: 24px;
+}
+
+.card-border {
+    padding: 16px;
+    border-radius: var(--border-radius-small);
+    border: 1px solid var(--btn-shadow-color);
+
+    display: grid;
+    grid-gap: 16px;
+}
+
+.candidateDetails {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.candidateDetails div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-gray-10);
+}
+
+.candidate-imgWrapper {
+    position: relative;
+    margin-inline-end: 8px;
+}
+
+
+.candidate-imgWrapper .icon {
+    font-size: 10px;
+    position: absolute;
+    bottom: -3px;
+    right: 0;
+    color: var(--color-info) !important;
+}
+
+.candidateDetails img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+.candidateDetails .candidate-name {
+    font-size: 0.875rem;
+}
+
+.candidateDetails .icon-w {
+    width: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.candidateDetails .icon {
+    font-size: 11px;
+    color: var(--color-gray-10);
+}
+
+.card-border .card {
+    height: 300px;
+    max-height: 100%;
+    width: 300px;
+    max-width: 100%;
+
+    padding: 24px;
+
+    border-radius: var(--border-radius-medium);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer !important;
+}
+
+.card .partyLogo {
+    width: 45px;
+}
+
+.card .partyLogo img {
+    width: 100%;
+}
+
+.cardImg {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.cardImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.card-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    color: var(--white);
+    position: relative;
+    font-family: var(--NeueMachina) !important;
+}
+
+.smallTxt {
+    font-size: .59rem;
+    font-weight: 300;
+    justify-content: baseline;
+}
+
+/* Tinubu */
+.tinubuCard .card {
+    /* background-image: url(../../../../assets/images/BKG.jpg); */
+}
+
+.tinubuCard .card-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: .7rem;
+}
+
+.tinubuCard .cardImg {
+    width: 100px;
+    height: 100px;
+}
+
+.tinubuCard .card-details p.cardTxt {
+    font-size: 2.4rem;
+    line-height: 85%;
+    font-weight: 900;
+    font-style: normal;
+    letter-spacing: -0.08em;
+    margin-block-start: 8px;
+}
+
+.tinubuCard .card-details p.BtmCardTxt {
+    font-size: 2.4rem;
+    line-height: 85%;
+    font-weight: 900;
+    letter-spacing: -0.08em;
+}
+
+.tinubuCard .card-details .smallTxt {
+    margin-block-start: 16px;
+}
+
+/* Peterobi */
+.peterObiCard .card {
+    /* background-image: url(../../../../assets/images/Group\ 2.jpg); */
+    position: relative;
+}
+
+.peterObiCard .card-details {
+    display: grid;
+    grid-template-rows: repeat(5, auto);
+    grid-template-columns: repeat(14, 1fr);
+    justify-items: center;
+    align-items: center;
+    margin-block-start: 1.3rem;
+}
+
+.peterObiCard .cardImg {
+    grid-row: 2/4;
+    grid-column: 4/5;
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+}
+
+.peterObiCard .card-details p.cardTxt {
+    grid-row: 1/ 2;
+    grid-column: 1/15;
+    font-size: 2.7rem;
+    line-height: 85%;
+    font-weight: 900;
+    font-style: normal;
+    letter-spacing: -0.08em;
+    margin-block-end: 5px;
+}
+
+.peterObiCard .card-details p.BtmCardTxt {
+    grid-column: 5/12;
+    font-size: 6.3rem;
+    line-height: 85%;
+    font-weight: 900;
+    letter-spacing: -0.01em;
+}
+
+.peterObiCard .card-details .smallTxt {
+    grid-column: 1/15;
+    margin-block-start: 12px;
+}
+
+/* atiku card */
+.atikuCard .card {
+    /* background-image: url(../../../../assets/images/Group\ 3.jpg); */
+}
+
+.atikuCard .card-details {
+    display: grid;
+    grid-template-rows: repeat(5, auto);
+    grid-template-columns: repeat(7, auto);
+    justify-items: center;
+    align-items: center;
+    margin-block-start: .3rem;
+}
+
+.atikuCard .cardImg {
+    grid-row: 3/4;
+    grid-column: 2/3;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+}
+
+.atikuCard .card-details p.cardTxt {
+    grid-row: 1/ 2;
+    grid-column: 1/6;
+    font-size: 2.1rem;
+    line-height: 85%;
+    font-weight: 900;
+    font-style: normal;
+    letter-spacing: -0.08em;
+}
+
+.atikuCard .card-details p.midTxt {
+    grid-column: 1/6;
+    font-size: 4.1rem;
+    line-height: 85%;
+    font-weight: 900;
+    letter-spacing: -0.08em;
+}
+
+.atikuCard .card-details p.BtmCardTxt,
+.atikuCard .card-details p.BtmCardTxt2,
+.atikuCard .card-details p.BtmCardTxt3 {
+    font-size: 4.3rem;
+    line-height: 85%;
+    font-weight: 900;
+    letter-spacing: -0.08em;
+}
+
+.atikuCard .card-details p.BtmCardTxt {
+    grid-column: 1/2;
+
+}
+
+.atikuCard .card-details .smallTxt {
+    grid-column: 1/6;
+    margin-block-start: 10px;
+}
+
+
+/* voice Nig */
+.voiceNig .card {
+    /* background-image: url(../../../../assets/images/Group\ 1.jpg); */
+    color: #000 !important;
+}
+
+.voiceNig .card-details {
+    display: grid;
+    grid-template-rows: repeat(5, auto);
+    grid-template-columns: repeat(7, auto);
+    justify-items: center;
+    align-items: center;
+    margin-block-start: .3rem;
+    border: 2px solid #000;
+}
+
+.voiceNig .cardImg {
+    grid-row: 3/4;
+    grid-column: 2/3;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+}
+
+.voiceNig .card-details p.cardTxt {
+    grid-row: 1/ 2;
+    grid-column: 1/6;
+    font-size: 3.1rem;
+    line-height: 85%;
+    font-weight: 900;
+    font-style: normal;
+    color: #00A85B;
+    letter-spacing: -0.08em;
+}
+
+.voiceNig .card-details p.midTxt {
+    color: #747F77;
+    grid-column: 1/6;
+    font-size: 2rem;
+    line-height: 85%;
+    font-weight: 900;
+    letter-spacing: -0.08em;
+}
+
+.voiceNig .card-details p.BtmCardTxt,
+.voiceNig .card-details p.BtmCardTxt2,
+.voiceNig .card-details p.BtmCardTxt3 {
+    color: #00A85B;
+    font-size: 3.1rem;
+    line-height: 85%;
+    font-weight: 900;
+    letter-spacing: -0.08em;
+}
+
+.voiceNig .card-details p.BtmCardTxt {
+    grid-column: 1/2;
+
+}
+
+.voiceNig .card-details .smallTxt {
+    grid-column: 1/6;
+    margin-block-start: 10px;
+}
+
+/* @media */
+@media only screen and (min-width:640px) {
+    .card-inner-w {
+        padding: 0 30px;
+    }
+
+    .cardComponent {
+        grid-gap: 8px 8px;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .card-border .card {
+        height: 300px;
+        max-height: 100%;
+        width: 300px;
+        max-width: 100%;
+        padding: 16px;
+    }
+
+    .card .partyLogo {
+        width: 30px;
+    }
+
+    /* Tinubu */
+    .tinubuCard .card-details {
+        margin-top: 1.3rem;
+    }
+
+    .tinubuCard .cardImg {
+        width: 80px;
+        height: 80px;
+    }
+
+    .tinubuCard .card-details p.cardTxt {
+        font-size: 1.7rem;
+    }
+
+    .tinubuCard .card-details p.BtmCardTxt {
+        font-size: 1.7rem;
+    }
+
+    .tinubuCard .card-details .smallTxt {
+        font-size: .575rem;
+    }
+
+    /* Obi */
+    .peterObiCard .cardImg {
+        width: 70px;
+        height: 70px;
+    }
+
+    .peterObiCard .card-details p.BtmCardTxt {
+        grid-column: 7/12;
+        font-size: 5.8rem;
+        line-height: 85%;
+        font-weight: 900;
+        letter-spacing: -0.01em;
+    }
+}
+
+@media only screen and (min-width:960px) {
+    .card-wrapper {
+        max-width: 1300px;
+        padding: 48px 0 80px 0;
+        margin: 0 auto;
+        font-family: var(--GT-Walsheim);
+    }
+
+    .card-inner-w {
+        padding: 0 40px;
+    }
+
+    .cardComponent {
+        grid-gap: 24px 24px;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+}
+
+@media only screen and (min-width:1200px) {
+
+    .card-border .card {
+        height: 300px;
+        max-height: 100%;
+        width: 300px;
+        max-width: 100%;
+    }
+}
+
+.card-border .card img {
+    width: 100%
+}
+
+.wrappereg {
+    position: relative;
+}
+
+#hideDisplay {}
+
+.uploadImg {
+    border: 2px solid #FFF;
+    background-color: red;
+    border-radius: 50%;
+    width: 391px;
+    height: 391px;
+    position: absolute;
+    top: 319px;
+    left: 351px;
+}
+
+.uploadImg img {
+    width: 100%;
+    border-radius: 50%
+}
+
+/* /@media */
+
+.create-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.create-btn {
+    width: 100%;
+    max-width: 100%;
+    height: 50px;
+    color: #FFF;
+    border: 0;
+    border-radius: 9px;
+}
+
+/* rn */
+.custom-btn {
+    background-color: var(--color-primary);
+    background-image: linear-gradient(var(--gradient-angle), var(--gradient-first), var(--gradient-second), var(--gradient-third));
+    font-family: var(--GT-Walsheim);
+}
+
+.create-card {
+    margin-block-start: 16px;
+}
